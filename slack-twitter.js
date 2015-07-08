@@ -28,7 +28,7 @@ var fs = require('fs');
 Cl.login();
 Cl.on('open', function() {
 
-});
+});//.listen(process.env.PORT || 5000);
 Cl.on('close', function () {
   console.log('Connection closed, retrying...');
   Cl.reconnect();

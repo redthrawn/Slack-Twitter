@@ -47,4 +47,4 @@ filter = {
   }
 }
 
-filters.addFilter(filter);
+//filters.addFilter(filter);

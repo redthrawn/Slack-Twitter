@@ -2,6 +2,7 @@ var S = require('slack-client');
 var Twit = require('twit');
 var TwitterText = require('twitter-text');
 var U = require('url');
+var port = process.env.PORT || 5000;
 
 var twitterOptions = {
   consumer_key: process.env.TWITTER_CONSUMER_KEY,

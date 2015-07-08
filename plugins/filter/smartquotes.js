@@ -10,6 +10,7 @@ var filter = {
     text = text.replace(/(^|[-\u2014/\[(\u2018\s])"/g, "$1\u201c"); // opening doubles
     text = text.replace(/"/g, "\u201d");                            // closing doubles
     text = text.replace(/--/g, "\u2014");                           // em-dashes
+    text = text.replace(/&gt;/g, "\u0020")                          // get rid of weird quote thing > => &gt;
     return text; 
   }
 };
